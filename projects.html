@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="projects.css">
+	<link rel="stylesheet" href="footer.css">
+	<link rel="stylesheet" href="Scripts/aos.css">
+	<script src="https://kit.fontawesome.com/87760a48d7.js"></script>
+	<script src="Scripts/jQueryV3.4.1.js"></script>
+	<script src="Scripts/aos.js"></script>
+	<script src="Scripts/copy.js"></script>
+	<title>Portfolio || Rensvdk</title>
+</head>
+<body>
+	<nav>
+		<div class="nav-text">
+			Rens van der Kemp
+		</div>
+		<div class="nav-text nav-link">
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="#">Projects</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		<i id="NavIcon" class="fas fa-bars fa-2x"></i>
+	</nav>
+	<main>
+		<h1 class="headerText">My Projects</h1>
+		<div class="container">
+			<div data-aos="fade-right" class="left">
+				<img src="Image/Projects/PortfolioLaptop.png">
+			</div>
+			<div data-aos="fade-left" class="right">
+				<div class="rightInfoBlock">
+					<h1>Portfolio</h1>
+					<p>
+						Upgrade to a more professional portfolio for projects and businesses
+					</p>
+					<div class="infoButtons">
+						<button class="buttonInfo">More Info</button>
+						<button id="Portfolio" class="buttonVisit">Visit site</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="container">
+			<div data-aos="fade-right" class="left">
+				<img src="Image/Projects/75JaarVrijheid.png">
+			</div>
+			<div data-aos="fade-left" class="right">
+				<div class="rightInfoBlock">
+					<h1>Project - 75 Jaar Vrijheid</h1>
+					<p>
+						School project to enable people to send ideas for the festival
+					</p>
+					<div class="infoButtons">
+						<button href="https://project75.ict-lab.nl/home.php" class="buttonInfo">More Info</button>
+						<button id="75JaarVrijheid" class="buttonVisit">Visit site</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="container">
+			<div data-aos="fade-right" class="left">
+				<img src="Image/Projects/HerenhuisLaptop.png">
+			</div>
+			<div data-aos="fade-left" class="right">
+				<div class="rightInfoBlock">
+					<h1>Project - Herenhuis</h1>
+					<p>
+						School project to sell a mansion through bidding
+					</p>
+					<div class="infoButtons">
+						<button href="" class="buttonInfo">More Info</button>
+						<button id="Herenhuis" class="buttonVisit">Visit site</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="container">
+			<div data-aos="fade-right" class="left">
+				<img src="Image/Projects/AjaxTweeterLaptop.png">
+			</div>
+			<div data-aos="fade-left" class="right">
+				<div class="rightInfoBlock">
+					<h1>Project - RedditTweeter</h1>
+					<p>
+						Easy to use UI to tweet reddit posts to your Twitter account
+					</p>
+					<div class="infoButtons">
+						<button class="buttonInfo">More Info</button>
+						<button id="AjaxTweeter" class="buttonVisit">Visit site</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="container">
+			<div data-aos="fade-right" class="left">
+				<img src="Image/Projects/TaartenKoningLaptop.png">
+			</div>
+			<div data-aos="fade-left" class="right">
+				<div class="rightInfoBlock">
+					<h1>Project - TaartenKoning</h1>
+					<p>
+						School project to sell custom pies online
+					</p>
+					<div class="infoButtons">
+						<button class="buttonInfo">More Info</button>
+						<button id="TaartenKoning" class="buttonVisit">Visit site</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</main>
+	<footer>
+		<div class="TextContainer">
+			<div class="FooterLeft">
+				<p class="Title">Info</p>
+				<p class="FooterLeftText">
+					Ik ben een hardwerkende en serieuze student met een grote interesse voor coderen.
+					Ik zit momenteel in het tweede jaar van mijn opleiding: Applicatie- en Media ontwikkelaar op het Grafisch Lyceum Rotterdam.
+					Ik houd van een uitdaging en kan goed communiceren met anderen.
+				</p>
+			</div>
+			<div class="FooterMiddle">
+				<p class="Title">Connect with me!</p>
+				<p class="FooterMiddleText">
+					<div class="SocialMediaText" id="Linkedin">
+					<a target="_blank" href="https://www.linkedin.com/in/rensvanderkemp/">Follow me on Linkedin</a>
+					</div>
+				
+					<div class="SocialMediaText" id="Discord">
+					<a id="copyText" onclick="copyText('test#1234','DiscordID Copied', this.id);">Add me on Discord</a>
+					</div>
+
+				</p>
+			</div>
+			<div class="FooterRight">
+				<p class="Title">Contact Info</p>
+				<div class="FooterRightText">
+					<div class="IconsFooter" id="Mobile">
+						<a id="copyText2" onclick="copyText('+12345678','Number Copied', this.id);">+12345678</a>
+					</div>
+					<div class="IconsFooter" id="Email">
+						<a id="copyText3" onclick="copyText('test@gmail.com','Email Copied', this.id);">test@gmail.com</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+<script src="Scripts/ButtonRedirect.js"></script>
+<script src="Scripts/responsiveNav.js"></script>
+<script>
+	AOS.init({
+		duration: 1500,
+	});
+  </script>
+</html>

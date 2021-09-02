@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="contact.css">
+	<link rel="stylesheet" href="footer.css">
+	<link rel="stylesheet" href="Scripts/aos.css">
+	<script src="https://kit.fontawesome.com/87760a48d7.js"></script>
+	<script src="Scripts/jQueryV3.4.1.js"></script>
+	<script src="Scripts/copy.js"></script>
+	<!-- <script src="Scripts/ScrollNav.js"></script> -->
+	<title>Portfolio || Rensvdk</title>
+</head>
+<body>
+	<nav>
+		<div class="nav-text">
+			Rens van der Kemp
+		</div>
+		<div class="nav-text nav-link">
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="projects.html">Projects</a>
+			<a href="#">Contact</a>
+		</div>
+		<i id="NavIcon" class="fas fa-bars fa-2x"></i>
+	</nav>
+	<main>
+		<div class="headerTekst">
+			<h1>Contact Me!</h1>
+			<p>If you have any questions feel free to contact me.</p>
+		</div>
+		<div class="container">
+			<form action="Mailer.php" name="ContactForm" method="POST">
+				<!-- <span>Full Name:<span class="red">*</span></span><br>
+				<input class="effect-2" name="FullNameUser" type="text">
+				<span class="focus-border"></span>
+				Email:<span class="red">*</span><br>
+				<input name="EmailUser" type="text"><br>
+				Message:<span class="red">*</span><br>
+				<textarea placeholder="Type your message here" name="MessageUser"></textarea>
+				<input type="hidden"> -->
+				<div class="input-container">
+					<input name="FullNameUser" class="input-effect" type="text" placeholder="Full Name">
+					<span class="focus-border"></span>
+				</div>
+				<div class="input-container">
+					<input name="EmailUser" class="input-effect" type="text" placeholder="Email">
+					<span class="focus-border"></span>
+				</div>
+				<textarea name="MessageUser" placeholder="Message"></textarea>
+				<input class="GradientButton" type="submit">
+			</form>
+		</div>
+	</main>
+	<footer>
+		<div class="TextContainer">
+			<div class="FooterLeft">
+				<p class="Title">Info</p>
+				<p class="FooterLeftText">
+					Ik ben een hardwerkende en serieuze student met een grote interesse voor coderen.
+					Ik zit momenteel in het tweede jaar van mijn opleiding: Applicatie- en Media ontwikkelaar op het Grafisch Lyceum Rotterdam.
+					Ik houd van een uitdaging en kan goed communiceren met anderen.
+				</p>
+			</div>
+			<div class="FooterMiddle">
+				<p class="Title">Connect with me!</p>
+				<p class="FooterMiddleText">
+					<div class="SocialMediaText" id="Linkedin">
+					<a target="_blank" href="https://www.linkedin.com/in/rensvanderkemp/">Follow me on Linkedin</a>
+					</div>
+				
+					<div class="SocialMediaText" id="Discord">
+					<a id="copyText" onclick="copyText('test#1234','DiscordID Copied', this.id);">Add me on Discord</a>
+					</div>
+
+				</p>
+			</div>
+			<div class="FooterRight">
+				<p class="Title">Contact Info</p>
+				<div class="FooterRightText">
+					<div class="IconsFooter" id="Mobile">
+						<a id="copyText2" onclick="copyText('+12345678','Number Copied', this.id);">+12345678</a>
+					</div>
+					<div class="IconsFooter" id="Email">
+						<a id="copyText3" onclick="copyText('test@gmail.com','Email Copied', this.id);">test@gmail.com</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+<script src="Scripts/responsiveNav.js"></script>
+</html>

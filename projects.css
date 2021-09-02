@@ -1,0 +1,206 @@
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+	font-display: auto;
+    src: url(Font/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+	font-display: auto;
+    src: url(Font/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSansSemiBold';
+	font-display: auto;
+    src: url(Font/OpenSans-SemiBold.ttf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+    font-family: 'OpenSansLight';
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: auto;
+	overflow-x: hidden;
+}
+
+nav {
+	height: 50px;
+	width: 100%;
+	color: black;
+}
+
+footer {
+	background-color: #282828;
+	height: 210px;
+	color: #908F8F;
+}
+
+img {
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+footer i {
+	color: white;
+	font-size: 1.1em;
+}
+
+.nav-text {
+	padding: 10px;
+	font-size: 1.4em;
+	display: inline;
+	position: relative;
+	top: 12px;
+}
+
+.nav-link {
+	display: inline;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.nav-link a {
+	color: #822D68;
+	text-decoration: none;
+	padding: 10px;
+	transition-duration: 0.25s;
+}
+
+.nav-link a:hover {
+	color: black;
+}
+
+.nav-link i {
+	display: none;
+	font-size: 1.4em;
+	margin-top: 4px;
+}
+
+#NavIcon {
+	display: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+}
+
+main hr {
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    border-color: #d6d6d6;
+}
+
+.left img {
+    width: 50%;
+    margin-left: 45%;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.headerText {
+	font-family: OpenSansSemiBold;
+	text-align: center;
+	font-size: 4em;
+	margin: 0;
+}
+
+.rightInfoBlock {
+    margin-top: 70px;
+    margin-left: 5%;
+}
+
+.rightInfoBlock {
+	width: 70%;
+}
+
+.rightInfoBlock h1 {
+	font-family: OpenSansSemiBold;
+}
+
+.infoButtons button {
+	font-family: OpenSansRegular;
+	padding: 10px;
+	padding: 15px 32px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border: none;
+	outline: none;
+    border-radius: 50px;
+	transition-duration: 0.5s;
+}
+
+.buttonInfo {
+    color: white;
+    background-color: #822D68;
+}
+
+.buttonVisit {
+    color: #822D68;
+	background-color: white;
+	border: 0.5px #822D68 solid !important;
+}
+
+.infoButtons .buttonInfo:hover {
+    cursor: pointer;
+    background-color: #5e204c;
+    
+}
+
+.infoButtons .buttonVisit:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #822D68;
+}
+
+@media only screen and (max-width: 768px) {
+	.headerText {
+		font-size: 3em;
+	}
+	.container {
+		grid-template-columns: 100vw;
+		overflow-x: hidden;
+	}
+	.left, .right {
+		text-align: center;
+	}
+	.rightInfoBlock {
+		width: 100%;
+		margin: 0;
+	}
+	.left img {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	#NavIcon {
+		display: block;
+		color: black;
+		position: absolute;
+		right: 10px;
+		top: 5px;
+	}
+	.nav-text {
+		display: none;
+	}
+	.nav-link a {
+		color: white;
+	}
+}

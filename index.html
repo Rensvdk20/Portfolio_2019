@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="Scripts/aos.css">
+	<script src="https://kit.fontawesome.com/87760a48d7.js"></script>
+	<script src="Scripts/jQueryV3.4.1.js"></script>
+	<script src="Scripts/Scroll-down.js"></script>
+	<script src="Scripts/aos.js"></script>
+	<script src="Scripts/copy.js"></script>
+	<!-- <script src="Scripts/ScrollNav.js"></script> -->
+	<title>Portfolio || Rensvdk</title>
+</head>
+
+<body>
+	<nav>
+		<div class="nav-text">
+			Rens van der Kemp
+		</div>
+		<div class="nav-text nav-link">
+			<a href="#">Home</a>
+			<a href="about.html">About</a>
+			<a href="projects.html">Projects</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		<i id="NavIcon" class="fas fa-bars fa-2x"></i>
+	</nav>
+ 	<section class="hero">
+		<div class="hero-inner">
+ 			<h1>Hi, I'm Rens.</h1>
+			<h2>Front End / Back End developer</h2>
+			<a href="about.html" class="btn">About Me...</a>
+			<a href="#" class="scroll-down" address="true"></a>
+		</div>
+	</section>
+	<main>
+		<div class="Block1 scrollpos1">
+		<div class="Intro">
+			<h2 data-aos="fade-right">
+			Rens van der Kemp is a student at the <label class="ColorBlack">Grafisch Lyceum Rotterdam</label>.<br>
+			He loves to code and continues to improve his work.
+			</h2>
+		</div>
+		<div class="LatestProjectText">
+		<h1>My Latest Projects:</h1>
+		<h3>These are some of my recent projects.</h3>
+		</div>
+		<div class="ProjectImages">
+			<div class="column">
+				<a href=""><div class="ProjectOverlay">
+				<img src="Image/ProjectPortfolio.jpg" alt="Portfolio website">
+				<div class="ProjectImgBlack"></div>
+				<div class="ProjectImgText">Portfolio</div>
+				</div></a>
+			</div>
+			<div class="column">
+				<a target="_blank" href="https://project75.ict-lab.nl/home.php"><div class="ProjectOverlay">
+				<img src="Image/75JaarVrijheid.jpg" alt="75 jaar vrijheid">
+				<div class="ProjectImgBlack"></div>
+				<div class="ProjectImgText">75 Jaar Vrijheid</div>
+				</div></a>
+			</div>
+			<div class="column">
+				<a target="_blank" href=""><div class="ProjectOverlay">
+				<img src="Image/ProjectHerenhuis.jpg" alt="Herenhuis">
+				<div class="ProjectImgBlack"></div>
+				<div class="ProjectImgText">HerenHuis</div>
+				</div></a>
+			</div>
+			<div class="column">
+				<a target="_blank" href=""><div class="ProjectOverlay">
+				<img src="Image/ProjectTaartenKoning.jpg" alt="Taarten Koning">
+				<div class="ProjectImgBlack"></div>
+				<div class="ProjectImgText">TaartenKoning</div>
+				</div></a>
+			</div>
+			<div class="column">
+				<a  target="_blank" href=""><div class="ProjectOverlay">
+				<img src="Image/ProjectTwitterBot.jpg" alt="Twitter Bot">
+				<div class="ProjectImgBlack"></div>
+				<div class="ProjectImgText">RedditTweeter</div>
+				</div></a>
+			</div>
+			<div class="column">
+				<a href=""><div class="ProjectOverlay">
+				<img src="Image/Black.jpg" alt="">
+				<div class="ProjectImgBlack"></div>
+				<div class="ProjectImgText">Coming Soon</div>
+				</div></a>
+			</div>
+		</div>
+		</div>
+		<div class="Block2">
+			<h1 class="HeaderBlock2">Experience:</h1>
+			<div class="CodeContainer">
+				<img class="Code" src="Image/Logo's/HTML5.svg" alt="HTML5" data-aos="zoom-in">
+				<img class="Code" src="Image/Logo's/Javascript.svg" alt="Javascript" data-aos="zoom-in">
+				<img class="Code" src="Image/Logo's/CSS3.svg" data-aos="zoom-in">
+				<img class="Code" src="Image/Logo's/PHPBlack.svg" alt="PHP" data-aos="zoom-in">
+				<img class="Code" src="Image/Logo's/MySQL.svg" alt="MySQL" data-aos="zoom-in">
+				<img class="Code" src="Image/Logo's/Jquery.svg" alt="jQuery" data-aos="zoom-in">
+			</div>
+		</div>
+		<footer>
+			<div class="TextContainer">
+				<div class="FooterLeft">
+					<p class="Title">Info</p>
+					<p class="FooterLeftText">
+						Ik ben een hardwerkende en serieuze student met een grote interesse voor coderen.
+						Ik zit momenteel in het tweede jaar van mijn opleiding: Applicatie- en Media ontwikkelaar op het Grafisch Lyceum Rotterdam.
+						Ik houd van een uitdaging en kan goed communiceren met anderen.
+					</p>
+				</div>
+				<div class="FooterMiddle">
+					<p class="Title">Connect with me!</p>
+					<p class="FooterMiddleText">
+						<div class="SocialMediaText" id="Linkedin">
+						<a target="_blank" href="https://www.linkedin.com/in/rensvanderkemp/">Follow me on Linkedin</a>
+						</div>
+					
+						<div class="SocialMediaText" id="Discord">
+						<a id="copyText" onclick="copyText('test#1234','DiscordID Copied', this.id);">Add me on Discord</a>
+						</div>
+
+					</p>
+				</div>
+				<div class="FooterRight">
+					<p class="Title">Contact Info</p>
+					<div class="FooterRightText">
+						<div class="IconsFooter" id="Mobile">
+							<a id="copyText2" onclick="copyText('+12345678','Number Copied', this.id);">+12345678</a>
+						</div>
+						<div class="IconsFooter" id="Email">
+							<a id="copyText3" onclick="copyText('test@gmail.com','Email Copied', this.id);">test@gmail.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</main>
+</body>
+	<script src="Scripts/responsiveNav.js"></script>
+	<script>
+	  AOS.init({
+		  duration: 1500,
+	  });
+	</script>
+</html>

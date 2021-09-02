@@ -1,0 +1,136 @@
+.TextContainer {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.FooterLeft {
+	float: left;
+	width: 30%;
+	display: inline;
+}
+
+.FooterMiddle {
+	float: left;
+	width: 30%;
+	display: inline;
+	margin-left: 5%;
+}
+
+.FooterRight {
+	float: right;
+	width: 30%;
+	display: inline;
+}
+
+.Title {
+	color: white;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.FooterMiddle p:first-child {
+	margin-left: 10%;
+}
+
+.FooterMiddleText {
+	margin-left: 10%;
+}
+
+.SocialMediaText:first-child {
+	margin-top: 0px;
+}
+
+.SocialMediaText {
+	margin-top: 5px;
+}
+
+.SocialMediaText a {
+	display: inline;
+	color: inherit;
+	text-decoration: inherit;
+	padding: 10px 0 6px 52px;
+}
+
+#Linkedin {
+	background: url(Image/SocialMedia/linkedin.svg) no-repeat;
+	background-size: 35px;
+	padding-bottom: 15px;
+	margin-left: 10%;
+}
+
+#Discord {
+	background: url(Image/SocialMedia/discord.svg) no-repeat ;
+	background-size: 35px;
+	padding-bottom: 15px;
+	margin-left: 10%;
+}
+
+#Mobile {
+	background: url(Image/Icons/Mobile.png) no-repeat ;
+	padding-bottom: 15px;
+}
+
+#Email {
+	background: url(Image/Icons/Email.png) no-repeat ;
+	padding-bottom: 15px;
+}
+
+.SocialMediaText a:hover, .IconsFooter a:hover {
+	color: #007AB9;
+}
+
+footer a {
+	cursor: pointer;
+}
+
+.FooterRight label {
+	margin-left: 5px;
+}
+
+.IconsFooter a {
+	color: inherit;
+	text-decoration: inherit;
+	padding: 10px 0 6px 32px;
+}
+
+@media only screen and (max-width: 1024px) {
+	footer {
+		font-size: 0.8em;
+	}
+	#Linkedin, #Google {
+		background-size: 30px;
+	}
+	.SocialMediaText a {
+		padding: 10px 0 6px 42px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	footer {
+		height: 250px;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+	.FooterLeft, .FooterMiddle, .FooterRight {
+		width: 100%;
+	}
+	footer {
+		height: 440px;
+	}
+	.FooterMiddle {
+		margin-left: 0;
+	}
+	#Linkedin, #Google {
+		margin-left: 0;
+	}
+	.FooterMiddle p:first-child {
+		margin-left: 0;
+	}
+	footer p, a {
+		font-size: 1.1em;
+	}
+	#Linkedin, #Discord {
+		margin-left: 0;
+	}
+}
